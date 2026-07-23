@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* shadcn/ui design tokens, tuned to match the portfolio's dark palette */
+@layer base {
+  :root {
+    --background: 216 33% 6%;
+    --foreground: 213 43% 93%;
+    --card: 216 32% 9%;
+    --card-foreground: 213 43% 93%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 214 15% 61%;
+    --border: 213 31% 16%;
+  }
+}
