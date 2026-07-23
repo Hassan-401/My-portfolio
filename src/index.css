@@ -845,6 +845,64 @@ main {
   margin-top: auto;
 }
 
+/* ---------- Pagination ---------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 38px;
+}
+
+.pagination__pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.pagination__arrow,
+.pagination__page {
+  display: grid;
+  place-items: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 6px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination__arrow:hover:not(:disabled),
+.pagination__page:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.pagination__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pagination__page.active {
+  background: linear-gradient(135deg, var(--teal), var(--cyan));
+  border-color: transparent;
+  color: #06121a;
+  box-shadow: 0 6px 18px #2dd4bf40;
+}
+
+.pagination__page.active:hover {
+  color: #06121a;
+  transform: translateY(-2px);
+}
+
 /* ---------- Languages ---------- */
 .langs__grid {
   display: grid;

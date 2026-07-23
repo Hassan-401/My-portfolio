@@ -22,6 +22,8 @@ import {
   FaHeart,
   FaSun,
   FaMoon,
+  FaChevronLeft,
+  FaChevronRight,
 } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
@@ -50,6 +52,8 @@ const icons = {
   heart: FaHeart,
   sun: FaSun,
   moon: FaMoon,
+  'chevron-left': FaChevronLeft,
+  'chevron-right': FaChevronRight,
 }
 
 export default function Icon({ name, size = 20, className = '' }) {

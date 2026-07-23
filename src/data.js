@@ -211,55 +211,158 @@ export const skills = [
   },
 ];
 
+// How many project cards appear on each pagination page.
+export const PROJECTS_PER_PAGE = 6;
+
 export const projects = [
   {
-    title: "E-Learning Platform",
+    title: "NexusCart — Multi-Vendor Marketplace",
     description:
-      "An online learning hub where students enroll in courses, watch video lessons, and follow their progress.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      "A full-scale marketplace where thousands of independent sellers run their own storefronts, inventory, and payouts under one roof.",
+    tech: ["Next.js", "NestJS", "PostgreSQL", "Redis", "Stripe Connect", "Docker"],
     highlight:
-      "Built course enrollment, video lesson delivery, quizzes, and per-student progress dashboards behind secure, role-based accounts.",
-    github: "https://github.com/your-username/e-learning",
+      "Engineered vendor onboarding, split payments with escrow, commission settlement, and a faceted product search that stays fast across a million-item catalog.",
+    github: "https://github.com/Hassan-401/nexuscart",
     demo: "#",
   },
   {
-    title: "Gym Website",
+    title: "MediCore — Hospital Management System",
     description:
-      "A modern fitness club site featuring membership plans, class schedules, and trainer profiles.",
-    tech: ["React.js", "Node.js", "Express.js", "CSS3"],
+      "An end-to-end hospital platform covering electronic health records, appointments, pharmacy stock, labs, and billing.",
+    tech: ["React.js", "Node.js", "PostgreSQL", "Prisma ORM", "Socket.IO", "AWS"],
     highlight:
-      "Designed a bold, mobile-first experience with plan comparison, session booking requests, and a smooth browsing flow.",
-    github: "https://github.com/your-username/gym-website",
+      "Modeled a strict role-based permission system across doctors, nurses, pharmacists, and admins, with a full audit trail on every patient record touched.",
+    github: "https://github.com/Hassan-401/medicore",
     demo: "#",
   },
   {
-    title: "Flavor Factory Website",
+    title: "EduVerse — Learning Management Platform",
     description:
-      "A tasteful brand site for a food company, presenting the menu, story, and photo gallery.",
-    tech: ["React.js", "JavaScript", "CSS3"],
+      "A university-grade LMS with course authoring, live virtual classrooms, proctored exams, and certification tracks.",
+    tech: ["Next.js", "NestJS", "MongoDB", "Redis", "WebRTC", "Tailwind CSS"],
     highlight:
-      "Crafted a rich visual identity with animated menu sections and an order-inquiry flow that keeps visitors engaged.",
-    github: "https://github.com/your-username/flavor-factory",
+      "Built live classrooms on WebRTC with recording and replay, plus an adaptive quiz engine that scores submissions and issues verifiable certificates.",
+    github: "https://github.com/Hassan-401/eduverse",
     demo: "#",
   },
   {
-    title: "Flowers E-Commerce",
+    title: "FinLedger — Banking & Payments Engine",
     description:
-      "An online flower shop with a browsable catalog, shopping cart, and checkout with delivery scheduling.",
-    tech: ["React.js", "Redux Toolkit", "Node.js", "MongoDB"],
+      "A double-entry ledger core that powers accounts, transfers, cards, and statements with strict financial correctness.",
+    tech: ["Node.js", "TypeScript", "PostgreSQL", "RabbitMQ", "Redis", "Docker"],
     highlight:
-      "Implemented product filtering, cart management, secure payment flows, and scheduled-delivery options from end to end.",
-    github: "https://github.com/your-username/flowers-shop",
+      "Guaranteed balance integrity with idempotent, transactional money movement and an append-only ledger that reconciles every posting to the cent.",
+    github: "https://github.com/Hassan-401/finledger",
     demo: "#",
   },
   {
-    title: "Pumps & Solar Systems Company",
+    title: "LogiTrack — Fleet & Logistics Platform",
     description:
-      "A corporate website for a pumps and solar energy firm, showcasing products, services, and completed projects.",
-    tech: ["React.js", "Node.js", "Express.js", "MySQL"],
+      "A logistics control tower for live vehicle tracking, route planning, driver assignment, and delivery proof.",
+    tech: ["React.js", "Node.js", "PostgreSQL", "Socket.IO", "Redis", "Mapbox"],
     highlight:
-      "Delivered a structured product catalog, service showcases, and a quote-request system that turns visitors into leads.",
-    github: "https://github.com/your-username/pumps-solar",
+      "Streamed thousands of GPS pings per second into a live dispatch map and cut planned mileage with a route-optimization service for multi-stop runs.",
+    github: "https://github.com/Hassan-401/logitrack",
+    demo: "#",
+  },
+  {
+    title: "TalentForge — Job Board & ATS",
+    description:
+      "A recruitment platform pairing a public job board with a full applicant tracking system for hiring teams.",
+    tech: ["Next.js", "NestJS", "PostgreSQL", "Elasticsearch", "Redis", "AWS S3"],
+    highlight:
+      "Parsed and indexed resumes for semantic matching, then drove candidates through customizable hiring pipelines with interview scheduling and scorecards.",
+    github: "https://github.com/Hassan-401/talentforge",
+    demo: "#",
+  },
+  {
+    title: "StreamHive — Video Streaming Platform",
+    description:
+      "A video-on-demand service with adaptive streaming, subscriptions, watch history, and personalized recommendations.",
+    tech: ["Next.js", "Node.js", "FFmpeg", "MongoDB", "Redis", "AWS CloudFront"],
+    highlight:
+      "Built an asynchronous transcoding pipeline that renders multi-bitrate HLS renditions and serves them through a CDN for smooth playback on any connection.",
+    github: "https://github.com/Hassan-401/streamhive",
+    demo: "#",
+  },
+  {
+    title: "CloudDesk — Multi-Tenant SaaS Helpdesk",
+    description:
+      "A customer support suite with shared inboxes, SLA policies, automations, and a self-service knowledge base.",
+    tech: ["React.js", "NestJS", "PostgreSQL", "Redis", "RabbitMQ", "Kubernetes"],
+    highlight:
+      "Designed tenant-isolated data access so every workspace stays sealed off, with SLA timers and escalation rules running on a background job queue.",
+    github: "https://github.com/Hassan-401/clouddesk",
+    demo: "#",
+  },
+  {
+    title: "PropVista — Real Estate Marketplace",
+    description:
+      "A property portal with rich listings, immersive virtual tours, mortgage tooling, and agent CRM.",
+    tech: ["Next.js", "Node.js", "PostgreSQL", "Elasticsearch", "Mapbox", "Redis"],
+    highlight:
+      "Combined geospatial map search with saved-search alerts, and delivered 360° virtual tours alongside a mortgage affordability calculator.",
+    github: "https://github.com/Hassan-401/propvista",
+    demo: "#",
+  },
+  {
+    title: "SocialSphere — Social Networking Platform",
+    description:
+      "A social network with algorithmic feeds, stories, real-time messaging, and community moderation.",
+    tech: ["React.js", "Node.js", "MongoDB", "Redis", "Socket.IO", "AWS S3"],
+    highlight:
+      "Built a fan-out feed service backed by Redis caching and a real-time messaging layer with presence, typing indicators, and read receipts.",
+    github: "https://github.com/Hassan-401/socialsphere",
+    demo: "#",
+  },
+  {
+    title: "AI Insight Studio — Document Intelligence",
+    description:
+      "An AI workspace that ingests large document sets and answers questions over them with cited sources.",
+    tech: ["Next.js", "Python", "FastAPI", "PostgreSQL", "pgvector", "Claude API"],
+    highlight:
+      "Implemented a retrieval-augmented pipeline that chunks and embeds documents, then grounds every generated answer in traceable source citations.",
+    github: "https://github.com/Hassan-401/ai-insight-studio",
+    demo: "#",
+  },
+  {
+    title: "RestoChain — Restaurant & Delivery Network",
+    description:
+      "A multi-branch restaurant system spanning online ordering, POS, kitchen displays, and courier dispatch.",
+    tech: ["React.js", "Node.js", "PostgreSQL", "Socket.IO", "Redis", "Docker"],
+    highlight:
+      "Synchronized live order state from checkout to kitchen screen to courier handoff, keeping every branch's menu and stock consistent in real time.",
+    github: "https://github.com/Hassan-401/restochain",
+    demo: "#",
+  },
+  {
+    title: "CyberGuard — Security Monitoring Dashboard",
+    description:
+      "A SIEM-style platform that ingests infrastructure logs and surfaces threats through live dashboards and alerting.",
+    tech: ["React.js", "Node.js", "Elasticsearch", "RabbitMQ", "Redis", "Docker"],
+    highlight:
+      "Streamed high-volume log events through a queue-backed ingestion pipeline with rule-based anomaly detection and on-call alert routing.",
+    github: "https://github.com/Hassan-401/cyberguard",
+    demo: "#",
+  },
+  {
+    title: "EventPulse — Event & Ticketing Platform",
+    description:
+      "A large-venue ticketing system with interactive seat maps, tiered pricing, QR entry, and organizer analytics.",
+    tech: ["Next.js", "NestJS", "PostgreSQL", "Redis", "RabbitMQ", "Stripe"],
+    highlight:
+      "Survived flash-sale traffic using distributed seat locking and queued checkout, so no seat is ever double-sold under heavy concurrency.",
+    github: "https://github.com/Hassan-401/eventpulse",
+    demo: "#",
+  },
+  {
+    title: "DevPipeline — CI/CD Orchestration Platform",
+    description:
+      "A self-hosted delivery platform that runs build pipelines, containerizes services, and ships them to clusters.",
+    tech: ["React.js", "Node.js", "Docker", "Kubernetes", "PostgreSQL", "Redis"],
+    highlight:
+      "Orchestrated isolated container builds with parallel job execution, streaming live logs to the browser and rolling deployments out to Kubernetes.",
+    github: "https://github.com/Hassan-401/devpipeline",
     demo: "#",
   },
 ];
